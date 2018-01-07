@@ -1,47 +1,45 @@
-<?php require_once 'config.php'; ?>
-<?php require_once DBAPI; ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login</title><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<?php include(HEADER_TEMPLATE); ?>
-<?php $db = open_database(); ?>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<h1>My Keys</h1>
-<hr />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<?php if ($db) : ?>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<div class="row">
-	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="sistemas/add.php" class="btn btn-primary">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-plus fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p></p>
-				</div>
-			</div>
-		</a>
-	</div>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="sistemas" class="btn btn-default">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-user fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p>Sistemas/Sites</p>
-				</div>
-			</div>
-		</a>
-	</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="login">
+  <form>
+    <div class="form-group">
+      <label>Login</label>
+      <input type="email" class="form-control" id="id" placeholder="login">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <a href="sistemas" class="btn btn-success" role="button">Entrar</a>
+    <a href="#" class="btn btn-info" role="button">Cadastrar</a>
+    <h1> My Keys - Gerencie suas senhas com mais facilidade </h1>
+  </form>
 </div>
+</body>
 
-<?php else : ?>
-	<div class="alert alert-danger" role="alert">
-		<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
-	</div>
-
-<?php endif; ?>
-
-<?php include(FOOTER_TEMPLATE); ?>
+</html>
