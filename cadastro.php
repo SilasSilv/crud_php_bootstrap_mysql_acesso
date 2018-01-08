@@ -21,13 +21,10 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<style>
-body {background-image: url(login.jpg);}
-</style>
-
 </head>
 
 <body>
+
   <div class="login">
   <form>
     <div class="form-group">
@@ -38,10 +35,14 @@ body {background-image: url(login.jpg);}
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
-    <a href="sistemas" class="btn btn-success" role="button">Entrar</a>
-    <a href="cadastro.php" class="btn btn-info" role="button">Cadastrar</a>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Confirmar Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <a href="index.php" class="btn btn-success" role="button">Cadastrar</a>
+    <a href="index.php" class="btn btn-danger" role="button">Cancelar</a>
 
-    <h1> My Keys - Gerencie suas senhas com mais facilidade </h1>
+    <h1> Informe seus dados </h1>
   </form>
 </div>
 </body>

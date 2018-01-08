@@ -7,7 +7,7 @@ $sistemas = null;
 $sistema = null;
 
 /**
- *  Listagem de Clientes
+ *  Listagem de sistemas
  */
 function index() {
 	global $sistemas;
@@ -15,7 +15,7 @@ function index() {
 }
 
 /**
- *  Cadastro de Clientes
+ *  Cadastro de sistemas
  */
 function add() {
 
@@ -33,7 +33,7 @@ function add() {
 }
 
 /**
- *	Atualizacao/Edicao de Cliente
+ *	Atualizacao/Edicao de sistema
  */
 function edit() {
 
@@ -62,7 +62,7 @@ function edit() {
 
 
 /**
- *  Visualização de um Cliente
+ *  Visualização de um sistema
  */
 function view($id = null) {
   global $sistema;
@@ -70,7 +70,7 @@ function view($id = null) {
 }
 
 /**
- *  Exclusão de um Cliente
+ *  Exclusão de um sistema
  */
 function delete($id = null) {
 
