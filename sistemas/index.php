@@ -32,7 +32,6 @@
 	<tr>
 		<th>ID</th>
 		<th width="30%">Nome</th>
-		<th>Password</th>
 		<th>Atualizado em</th>
 		<th width= "25%">Opções</th>
 	</tr>
@@ -43,7 +42,6 @@
 	<tr>
 		<td><?php echo $sistema['id']; ?></td>
 		<td><?php echo $sistema['name']; ?></td>
-		<td><?php echo $sistema['password']; ?></td>
 		<td><?php echo $sistema['modified']; ?></td>
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $sistema['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
