@@ -12,7 +12,7 @@ CREATE TABLE sistemas(
   id INT(10) PRIMARY KEY,
   id_usuario_fk INT(10) NOT NULL,
   senha_sistema VARCHAR(34),
-  sistema_ds VARCHAR(34)
+  sistema_ds VARCHAR(34) 
 );
 
 ALTER TABLE usuarios  MODIFY id_usuario int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
