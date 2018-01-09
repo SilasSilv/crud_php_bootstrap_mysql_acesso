@@ -1,3 +1,8 @@
+<?php
+  require_once('functions.php');
+  add_user();
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -19,29 +24,42 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-
-<style>
-body {background-image: url(login.jpg);}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
 </head>
 
 <body>
+
+  <form action="cadastro.php" method="post">
+
   <div class="login">
   <form>
     <div class="form-group">
       <label>Login</label>
-      <input type="email" class="form-control" id="login" placeholder="login">
+      <input type="text" class="form-control" id="login" name= "usuario['login']" placeholder="login">
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="senha" placeholder="Password">
+      <input type="password" class="form-control" id="senha" name= "usuario['senha']" placeholder="Password">
     </div>
-    <a href="sistemas" class="btn btn-success" role="button">Entrar</a>
-    <a href="sistemas/cadastro.php" class="btn btn-info" role="button">Cadastrar</a>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Confirmar Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <script>
+    function alerta()
+    {
+      alert('Cadastro efetuado com sucesso :) Clique em "OK" para prosseguir!');
+    }
+    </script>
+    <div id="actions" class="row">
+      <div class="col-md-12">
+        <button type="submit" onclick="alerta()" class="btn btn-success">Cadastrar</button>
+        <a href="../index.php" class="btn btn-danger">Cancelar</a>
+      </div>
+    </div>
 
-    <h1> My Keys - Gerencie suas senhas com mais facilidade </h1>
+    <h1> Informe seus dados </h1>
   </form>
 </div>
 </body>

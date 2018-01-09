@@ -5,6 +5,25 @@ require_once(DBAPI);
 
 $sistemas = null;
 $sistema = null;
+$usuario = null;
+$usuarios = null;
+
+/**
+ *  Cadastro de usuario
+ */
+function add_user() {
+
+  if (!empty($_POST['usuario'])) {
+
+    $today =
+      date_create('now', new DateTimeZone('America/Sao_Paulo'));
+
+    $usuario = $_POST['usuario'];
+
+    save('usuarios', $usuario);
+    header('location: ../index.php');
+  }
+}
 
 /**
  *  Listagem de sistemas
